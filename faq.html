@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type ="text/css" href="faq.css">
+</head>
+
+<body>
+<h2>
+	Frequently Asked Questions
+</h2>
+<div class="layout">
+	<div class="row">
+	<div class="row__question">
+		<p>Are holidays ATOL protected?</p>
+
+	</div>
+	<div class="row__answer">
+		<p>Yes they are ATOL protected</p>
+	</div>
+	</div>
+	<div class="row">
+	<div class="row__question">
+		<p>How many countries do you travel to?</p>
+
+	</div>
+	<div class="row__answer">
+		<p>We fly to 100 countries.</p>
+	</div>
+	</div>	<div class="row">
+	<div class="row__question">
+		<p>Can I book over the phone?</p>
+
+	</div>
+	<div class="row__answer">
+		<p>Yes. you can book over the phone or instore.</p>
+	</div>
+	</div>
+	<div class="row">
+	<div class="row__question">
+		<p>What if I have to cancel?</p>
+	</div>
+
+	<div class="row__answer">
+		<p>
+		We offer free cancelations up to 30 days after your purchase. And we offer credit for cancelled holidays u to 60 days before your holiday.
+		</p>
+	</div>
+	</div>
+</div>
+
+    <script>
+        let answers=document.querySelectorAll(".row");
+        answers.forEach((event)=>{
+            event.addEventListener('click',()=>{
+                if(event.classList.contains("active")){
+                    event.classList.remove("active");
+                }
+                else{
+                    event.classList.add("active");
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
